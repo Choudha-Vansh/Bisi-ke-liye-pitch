@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For Bisi 💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #ffdee9, #b5fffc);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .floating {
+            position: absolute;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            font-size: 16px;
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        .corner1 { top: 10%; left: 5%; }
+        .corner2 { top: 25%; right: 5%; }
+        .corner3 { bottom: 20%; left: 10%; }
+        .corner4 { bottom: 10%; right: 10%; }
+        .center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ff99cc;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="floating corner1">Hey Bisi! 💖</div>
+    <div class="floating corner2">You know who’s the best?</div>
+    <div class="floating corner3">It’s you. YESSSS YOU!</div>
+    <div class="floating corner4">Ever since you came into my life, it has evolved beautifully. You've made everything better, and I couldn’t ask for more than *you*.</div>
+    <div class="floating center">Who do you love the most? 💘<br><button>Bisi</button> <button>Vansa</button></div>
+
+    <div class="music-control">
+        <h3>Do You Love Music?</h3>
+        <audio id="loveMusic" controls>
+            <source src="Lauv.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</body>
+</html>
